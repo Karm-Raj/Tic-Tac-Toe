@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+@layer components{
+    .my-con{
+        @apply bg-red-200 min-h-10 min-w-10;
+    }
+}

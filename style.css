@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+@theme {
+
+}
+@layer components{
+  :root{
+    --owncl:rgb(255, 0, 0);
+    --bg:#E8F9FF;
+    --bg2:rgb(227, 227, 227);
+  }
+
+/* button */
+ .btn-style{
+      @apply bg-cyan-300 text-white p-4 pt-2 pb-2 rounded-2xl;
+        border: 2px solid #0ebac5;
+        transition: all 500ms ease;
+    }
+    .ion-icon {
+        color: #fff;
+        font-size: 3em;
+        border: none;
+    }
+    .btn-style:hover {
+        box-shadow: 0 0 20px #0ebac5;
+    }
+    .btn-style:hover ion-icon{
+        color: #0ebac5;
+        box-shadow: 0 0 12px #0ebac5;
+    }
+
+/* box */
+    .box{
+      @apply size-full transition-all;
+    }
+    .box:hover{
+     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+    .ownbg{
+      background-color: var(--bg2);
+    }
+    .con-shadow{
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      user-select: none;
+    }
+}
