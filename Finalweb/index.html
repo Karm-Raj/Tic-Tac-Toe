@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>[title]</title>
+    <title>Tic Tac Toe</title>
+    <link rel="shortcut icon" href="assets/res/favicon.png" type="image/x-icon">
 <!-- for output css file -->
     <!-- <link rel="stylesheet" href="style-min.css"> -->
-    <link rel="stylesheet" href="/Templet-of-Web/src/style.css">
+    <link rel="stylesheet" href="/Tic-Tac-Toe/src/style.css">
 <!-- cdn of Awesome font icon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <!-- poppins Font import -->
@@ -14,7 +15,7 @@
         @import url('https://fonts.googleapis.com/css2?family=Pochaevsk&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
     </style>
 </head>
-<body>
+<body class=" ownbg ">
     <header >
         <nav>
             <ul>
@@ -26,21 +27,32 @@
         </nav>
     </header>
 <!-- main Part -->
-    <main>
-
-
-<h1 class="bg-amber-600 text-3xl text-amber-200">Hi How are You</h1>
-<div class="box h-60 w-50 bg-green-400 grid grid-cols-3 grid-rows-3 gap-3 ">
-    <div class="con my-con"></div>
-    <div class="con my-con"></div>
-    <div class="con my-con"></div>
-    <div class="con my-con"></div>
-    <div class="con my-con"></div>
-    <div class="con my-con"></div>
-</div>
-
-
-    </main>
+<main class="h-screen flex items-center justify-center">
+    <section class=" bg-white container w-80 h-auto con-shadow  rounded-4xl">
+      <div class="btn flex justify-around pl-8 pr-8 mt-4">
+        <button id="play-btn" class="btn-style">Play</button>
+        <button id="restart-btn" class="btn-style">Restart</button>
+        <button id="volume-btn" class="btn-style p-2"><i id="volume-btn-i" class="fa-solid fa-volume-high" style="color: #ffffff;"></i></button>
+      </div>
+      <div class="msg">
+        <p class=" text-center mt-4 font-bold">Press Play Button</p>
+      </div>
+      <section id="cont-sec" class=" hidden transition-all playground  grid-cols-3 grid-rows-3 place-items-center  items-center justify-self-center size-56 mt-4">
+        <div id="1" name="-" class="box rounded-tl-2xl"><i class=" box-icon box-icon-x fa-solid fa-x" ></i><i class="box-icon box-icon-o fa-solid fa-o" ></i></div>
+        <div id="2" name="-" class="box border-r-2 border-l-2"><i class=" box-icon box-icon-x fa-solid fa-x" ></i><i class="box-icon box-icon-o fa-solid fa-o" ></i></div>
+        <div id="3" name="-" class="box rounded-tr-2xl"><i class=" box-icon box-icon-x fa-solid fa-x" ></i><i class="box-icon box-icon-o fa-solid fa-o" ></i></div>
+        <div id="4" name="-" class="box border-t-2 border-b-2"><i class=" box-icon box-icon-x fa-solid fa-x" ></i><i class="box-icon box-icon-o fa-solid fa-o" ></i></div>
+        <div id="5" name="-" class="box border-2"><i class=" box-icon box-icon-x fa-solid fa-x" ></i><i class="box-icon box-icon-o fa-solid fa-o" ></i></div>
+        <div id="6" name="-" class="box border-t-2 border-b-2"><i class=" box-icon box-icon-x fa-solid fa-x" ></i><i class="box-icon box-icon-o fa-solid fa-o" ></i></div>
+        <div id="7" name="-" class="box rounded-bl-2xl"><i class=" box-icon box-icon-x fa-solid fa-x" ></i><i class="box-icon box-icon-o fa-solid fa-o" ></i></div>
+        <div id="8" name="-" class="box border-r-2 border-l-2"><i class=" box-icon box-icon-x fa-solid fa-x" ></i><i class="box-icon box-icon-o fa-solid fa-o" ></i></div>
+        <div id="9" name="-" class="box rounded-br-2xl"><i class=" box-icon box-icon-x fa-solid fa-x" ></i><i class="box-icon box-icon-o fa-solid fa-o" ></i></div>
+      </section>
+      <footer>
+        <p class=" text-[0.8em] text-right mr-14 mt-4 mb-4">&copy; by Karm</p>
+      </footer>
+    </section>
+</main>
 <!-- footer Part -->
     <footer>
 
